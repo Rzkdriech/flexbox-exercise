@@ -13,7 +13,7 @@ body {
 
 /* Exercise 1 */
 .firstContainer {
-  width: 40rem;
+  width: 800px;
   margin: 2.5rem auto;
   background-color: #fff;
   padding: 1rem;
@@ -38,38 +38,35 @@ body {
 
 /* Exercise 2 */
 .secondContainer {
-  max-width: 40rem;
+  max-width: 800px;
   margin: 2.5rem auto;
-  display: flex;
 }
 
-.firstService,
-.secondService,
-.thirdService {
-   box-sizing: border-box;
-  padding: 1rem;
+.service {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
-.firstService {
+.service.first {
   background-color: lightblue;
 }
 
-.secondService {
+.service.second {
   background-color: yellow;
 }
 
-.thirdService {
+.service.third {
   background-color: tomato;
 }
 
 @media (min-width: 600px) {
   .secondContainer {
-    justify-content: center;
+    display: flex;
     justify-content: space-between;
   }
 
-  .firstService, .secondService, thirdService {
- width: 30%;
-
+  .service {
+    width: 30%;
   }
 }
